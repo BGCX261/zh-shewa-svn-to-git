@@ -1,0 +1,38 @@
+﻿开发规范
+1.统一使用link方法，并且置于head对象之内。
+2.合理的使用模块的css继承性质，预先考虑到子父类相关性，为以后维护提供便利
+3.良好的命名规范，禁止使用拼音，单词过长可以使用缩写
+4.使用统一css书写风格，
+例:
+#doc{
+	margin:0;
+	padding:0;
+	background:#f0f;
+}
+5.模块需统一标注释开发者及继承来源 例 /* .emod-01 extend .mod (robben) */
+6.维护代码时如果需要修改css文件，请添加修改时间及作者 /* add 2009-8-25 */
+7. base.css文件的添加公用样式需注释其使用说明
+8.鼓励使用mozilla的css书写顺序 http://www.mozilla.org/css/base/content.css
+9.模块书写时需要命名空间,例如
+.emod01{...}
+.emod01 .top{...}
+.emod01 .tl{...}
+
+性能优化
+1.在流量大的页面使用CSS Sprites技术来减少http连接数。
+2.合理的选用图片格式及对图片进行压缩处理
+3.在特殊页面加载中使用预加载或懒加载
+4.上线时压缩对文件比较大的css代码，也可以全部压缩。
+5.使用尽量简短的css 选择器 http://docs.google.com/View?docid=dfkq8hd_13cwq5f5fc
+6.尽量减少float的使用，使用display:inline来代替(reflow和repaints问题)
+7.尽量避免reflow http://www.stubbornella.org/content/2009/03/27/reflows-repaints-css-performance-making-your-javascript-slow/
+8.尽量避免使用expression
+9.对于ie :hover背景问题,如果在页面中很多，在没有js的情况下可以使用* html { filter: expression(document.execCommand("BackgroundImageCache", false, true)); }，减少闪屏问题、减少http连接数
+10.强烈要求不使用@import，这玩意问题太多，首先它是后加载，会造成白屏，而且ie下有bug
+http://www.gracecode.com/archives/2377/
+http://blog.12km.com/import/import_bug.html
+一些其他的性能优化文章(仅做参考)
+http://www.aoao.org.cn/blog/2007/11/memory-cpu/
+http://www.zishu.cn/blogview.asp?logID=834
+http://developer.yahoo.com/yslow/help/index.html#guidelines
+http://code.google.com/intl/zh-CN/speed/page-speed/docs/rules_intro.html

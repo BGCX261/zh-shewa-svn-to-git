@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS Reset Test</title>
+<link rel="stylesheet" type="text/css" href="../../css/r.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/b.css"/>
+<style type="text/css" media="screen">
+body{
+		font-size:14px;
+		padding:10px;
+		text-align:left;
+	}
+ol li{
+	list-style:inside decimal ;
+	background:#eee;
+	padding:5px;
+}
+.line_num {color: #666666; background-color: #E8E8E8;}
+.tab-links li{width:43px;height:21px;background:url(images/mod.png) no-repeat 0 -96px;text-align:center;line-height:21px;margin:0 1px}
+.hd,.tab-links{margin-top:10px;}
+.k-inline-block-icon{width:18px;height:15px;background:url(images/mod.png) no-repeat 0 -37px;margin:0 10px 0 0 ;_margin:5px 10px 5px 0;}
+</style>
+</head>
+<body>
+<img src="http://www.baidu.com/img/baidu_logo.gif" width="500px" height="100px" />
+<pre>
+<span class="line_num"><font color=#e8e8e8>000</font>6 </span>img {
+<span class="line_num"><font color=#e8e8e8>000</font>7 </span>    -ms-interpolation-mode: bicubic;
+<span class="line_num"><font color=#e8e8e8>000</font>8 </span>}
+</pre>
+
+<h2>-ms-interpolation-mode: bicubic </h2>
+<p>ie私有属性,可以改善图片失真,但过于损害cpu资源，如果图片情况比较多的情况可以将其去掉或添加到子元素上</p>
+<hr />
+<pre>
+<span class="line_num"><font color=#e8e8e8>00</font>75 </span>.k-inline-block {
+<span class="line_num"><font color=#e8e8e8>00</font>76 </span>    <font color=#0000FF>display</font>: inline-block;
+<span class="line_num"><font color=#e8e8e8>00</font>77 </span>    <font color=#0000FF>display</font>: -moz-inline-stack;
+<span class="line_num"><font color=#e8e8e8>00</font>78 </span>    *<font color=#0000FF>display</font>: inline;
+<span class="line_num"><font color=#e8e8e8>00</font>79 </span>    zoom: 1;
+<span class="line_num"><font color=#e8e8e8>00</font>80 </span>    <font color=#0000FF>vertical-align</font>: middle;
+<span class="line_num"><font color=#e8e8e8>00</font>81 </span>    <font color=#0000FF>position</font>: relative;
+<span class="line_num"><font color=#e8e8e8>00</font>82 </span>    *<font color=#0000FF>position</font>: static;
+<span class="line_num"><font color=#e8e8e8>00</font>83 </span>}
+</pre>
+<div class="tab-links" id="tab">
+					<ul>
+						<li class="k-inline-block active"><a href="#">女性</a></li><li class="k-inline-block"><a href="#">男性</a></li><li class="k-inline-block"><a href="#">儿童</a></li><li class="k-inline-block"><a href="#">老人</a></li>
+					</ul>
+</div>
+<hr />
+<pre>
+<span class="line_num"><font color=#e8e8e8>00</font>88 </span>.k-inline-block-icon {
+<span class="line_num"><font color=#e8e8e8>00</font>89 </span>    <font color=#0000FF>display</font>: inline-block;
+<span class="line_num"><font color=#e8e8e8>00</font>90 </span>    <font color=#0000FF>display</font>: -moz-inline-stack;
+<span class="line_num"><font color=#e8e8e8>00</font>91 </span>    *<font color=#0000FF>display</font>: inline;
+<span class="line_num"><font color=#e8e8e8>00</font>92 </span>    zoom: 1;
+<span class="line_num"><font color=#e8e8e8>00</font>93 </span>    <font color=#0000FF>padding</font>: 0;
+<span class="line_num"><font color=#e8e8e8>00</font>94 </span>    <font color=#0000FF>vertical-align</font>: middle;
+<span class="line_num"><font color=#e8e8e8>00</font>95 </span>    <font color=#0000FF>font-size</font>: 0;
+<span class="line_num"><font color=#e8e8e8>00</font>96 </span>    <font color=#0000FF>line-height</font>: 9999em;
+<span class="line_num"><font color=#e8e8e8>00</font>97 </span>    <font color=#0000FF>overflow</font>: hidden;
+<span class="line_num"><font color=#e8e8e8>00</font>98 </span>    <font color=#0000FF>position</font>: relative;
+<span class="line_num"><font color=#e8e8e8>00</font>99 </span>    *<font color=#0000FF>position</font>: static;
+<span class="line_num"><font color=#e8e8e8>0</font>100 </span>}
+</pre>
+<div class="hd">
+			<h3><span class="k-inline-block-icon">abcd</span>精品推荐</h3>
+</div>
+<h2>k-inline-block-icon与k-inline-block的区别在于会将文本元素去掉</h2>
+</body>
+</html>

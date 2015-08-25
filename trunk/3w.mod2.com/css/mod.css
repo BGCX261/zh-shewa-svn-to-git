@@ -1,0 +1,31 @@
+/* .emod-01 extend mod */
+.emod-01{background:#F4F9FB;border:2px solid #B3D8E5;zoom:1}
+.emod-01 .top,.emod-01 .bottom,.emod-01 .tl,.emod-01 .bl{height:3px;width:auto;background:url(../img/sprites_hp.png) no-repeat ;}
+.emod-01 .top{background-position:right -60px;margin:-2px -2px 0 0;}
+.emod-01 .top .tl{background-position:0 -40px;margin-left:-2px;width:3px;}
+.emod-01 .bottom{background-position:right -63px;margin:0 -2px -2px 0;}
+.emod-01 .bottom .bl{background-position:0 -43px;margin:0 0 0 -2px;width:3px;}
+.emod-01 .inner{padding:5px;}
+/* mini */
+#mini{border-color:#FDCCCC;background:#FFF7F7;}
+#mini .top{background-position:right -100px;}
+#mini .tl{background-position:0 -80px;}
+#mini .bottom{background-position:right -103px}
+#mini .bl{background-position:0 -83px}
+/* .emod-02 extend mod */
+.emod-02{background:#fff;max-width:800px;overflow:hidden;zoom:1;position:relative;}
+.emod-02 .top{background:url(../img/even_tb.png) no-repeat;height:10px;}
+.emod-02 .bottom{background:url(../img/even_tb.png) no-repeat 0 100%;height:10px;}
+.emod-02 .tl{background:url(../img/even_lr.png) no-repeat ;width:10px;height:32000px;}
+.emod-02 .tr{background:url(../img/even_lr.png) no-repeat 100% 0;width:10px;height:32000px;}
+.emod-02 .br{background:url(../img/even_tb.png) no-repeat 100% 100%;margin-top:0;}
+.emod-02 .inner{padding:10px;}
+/* .emod-03 extend mod */
+.emod-03{background:#fff url(../img/aeven_l.png) repeat-y;overflow:hidden;zoom:1 }
+.emod-03 .inner{padding:10px;background:url(../img/aeven_r.png) repeat-y 100% 0;}
+.emod-03 .top{background:url(../img/emod3-tb.png) repeat-x 0 -20px;height:10px;}
+.emod-03 .bottom{background:url(../img/emod3-tb.png) repeat-x 0 -30px;height:10px;}
+.emod-03 .tl{background:url(../img/emod3-tb.png) no-repeat 0 0 ;width:9px;height:10px;}
+.emod-03 .tr{background:url(../img/emod3-tb.png) no-repeat -9px 0 ;width:9px;height:10px;}
+.emod-03 .bl{background:url(../img/emod3-tb.png) no-repeat 0 -10px ;width:9px;height:10px;margin-top:0;}
+.emod-03 .br{background:url(../img/emod3-tb.png) no-repeat -9px -10px;margin-top:0;}
